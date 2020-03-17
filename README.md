@@ -1,6 +1,6 @@
 # Study_pytorch
 
-## Google colab 사용
+## Using Google colab
 
 
 ```
@@ -20,7 +20,7 @@ cd tutorials/beginner_source/blitz
 ```
 
 
-## Pytorch 설치 - PyCharm 연동
+## Install Pytorch - With PyCharm
 
 [myNaverBlog Link](https://blog.naver.com/kimnanhee97/221859176834)
 
