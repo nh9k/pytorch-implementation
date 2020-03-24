@@ -25,10 +25,11 @@ cd tutorials/beginner_source/blitz
 [myNaverBlog Link](https://blog.naver.com/kimnanhee97/221859176834)
 
 
-## Plan
+## Goal
 - [ ] VGG Net
 - [ ] GAN
 - [ ] CycleGAN
+- [ ] StarGAN
 - [ ] EfficientNet
 
 
