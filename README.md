@@ -24,5 +24,13 @@ cd tutorials/beginner_source/blitz
 
 [myNaverBlog Link](https://blog.naver.com/kimnanhee97/221859176834)
 
+
+## Plan
+- [ ] VGG Net
+- [ ] GAN
+- [ ] CycleGAN
+- [ ] EfficientNet
+
+
 ## Author
 Nanhee Kim / [@nh9k ](https://github.com/nh9k)
