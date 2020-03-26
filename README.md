@@ -65,6 +65,9 @@ you can see contents about installing pytorch here!
 [...Outline](#outline)  
 
 ## LeNet5
+
+![lenet-5](https://user-images.githubusercontent.com/56310078/77683274-7afad000-6fdb-11ea-8263-9792c3c583d7.png)
+
 original LeNet5 test
 
 ### (1) Prerequisites
