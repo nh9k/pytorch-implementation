@@ -14,6 +14,8 @@
 |VGG Net|EfficientNet||
 | **Object detection** | with COCO Dataset | |
 |YOLO|Mask R-CNN||
+| **Segmentation** |||
+|U-Net|||
 | **Generative model** | | |
 |GAN|CycleGAN|StarGAN|
 
