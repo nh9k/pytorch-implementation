@@ -3,7 +3,7 @@
 ## Outline
 ||||||
 |---|---|---|---|---|
-|[1. Goal](#1-goal)|[2. Using Google colab](#2-using-google-colab)|[3. Install Pytorch - With PyCharm](#3-install-pytorch-with-pycharm)|[4. Study net](#4-study-net)|[5. Author](#5-Author)|
+|[1. Goal](#1-goal)|[2. Using Google colab](#2-using-google-colab)|[3. Install Pytorch - With PyCharm](#3-install-pytorch---with-pycharm)|[4. Study net](#4-study-net)|[5. Author](#5-Author)|
 
 
 ## 1. Goal
@@ -26,7 +26,7 @@
 - [ ] YOLO
 - [ ] Mask R-CNN with COCO Dataset
 
-[...Outline](#0-outline)
+[...Outline](#outline)
 
 ## 2. Using Google colab
 
@@ -47,14 +47,14 @@ cd tutorials/beginner_source/blitz
 !python3 cifar10_tutorial.py
 ```
 
-[...Outline](#0-outline)
+[...Outline](#outline)
 
 ## 3. Install Pytorch - With PyCharm
 
 you can see contents about installing pytorch here!
 [myNaverBlog Link](https://blog.naver.com/kimnanhee97/221859176834)
 
-[...Outline](#0-outline)
+[...Outline](#outline)
 
 ## 4. Study net
 
@@ -62,7 +62,7 @@ you can see contents about installing pytorch here!
 |---|---|---|---|---|
 |[LeNet5](#LeNet5) |||||
 
-[...Outline](#0-outline)  
+[...Outline](#outline)  
 
 ## LeNet5
 original LeNet5 test
