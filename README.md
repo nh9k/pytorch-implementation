@@ -1,19 +1,30 @@
 # Study_pytorch
 
 ## Outline
-[1. Goal](#1-goal)  
-[2. Using Google colab](#2-using-google-colab)  
-[3. Install Pytorch - With PyCharm](#3-install-pytorch-with-pycharm)  
-[4. Study net](#4-study-net)  
-[5. Author](#5-Author)
+||||||
+|---|---|---|---|---|
+|[1. Goal](#1-goal)|[2. Using Google colab](#2-using-google-colab)|[3. Install Pytorch - With PyCharm](#3-install-pytorch-with-pycharm)|[4. Study net](#4-study-net)|[5. Author](#5-Author)|
 
 
 ## 1. Goal
+
+| | | |
+| :------------ | :-----------: | :-----------: |
+|  **Classfication**| | |
+|VGG Net|EfficientNet||
+| **Object detection** | with COCO Dataset | |
+|YOLO|Mask R-CNN||
+| **Generative model** | | |
+|GAN|CycleGAN|StarGAN|
+
+
 - [ ] VGG Net
 - [ ] GAN
 - [ ] CycleGAN
 - [ ] StarGAN
 - [ ] EfficientNet
+- [ ] YOLO
+- [ ] Mask R-CNN with COCO Dataset
 
 [...Outline](#0-outline)
 
@@ -46,7 +57,10 @@ you can see contents about installing pytorch here!
 [...Outline](#0-outline)
 
 ## 4. Study net
-[LeNet5](#LeNet5)  
+
+|model|||||
+|---|---|---|---|---|
+|[LeNet5](#LeNet5) |||||
 
 [...Outline](#0-outline)  
 
