@@ -23,6 +23,7 @@
 - [ ] VGG Net
 - [ ] GAN
 - [ ] CycleGAN
+- [ ] U-Net
 - [ ] StarGAN
 - [ ] EfficientNet
 - [ ] YOLO
