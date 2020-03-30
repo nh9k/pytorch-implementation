@@ -1,4 +1,4 @@
-# Study_pytorch
+# Study_Pytorch
 
 ## Outline
 ||||||
@@ -71,7 +71,8 @@ you can see contents about installing pytorch here!
 
 ![lenet-5](https://user-images.githubusercontent.com/56310078/77683274-7afad000-6fdb-11ea-8263-9792c3c583d7.png)
 
-original LeNet5 test
+[LeNet5 paper](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)
+[cifar10 information](https://www.cs.toronto.edu/~kriz/cifar.html)
 
 ### (1) Prerequisites
 
@@ -113,6 +114,22 @@ Accuracy of  ship : 58 %
 Accuracy of truck : 67 %
 ```
 [...4.Study net](#4-study-net) 
+
+## VGGNet
+
+<img src="https://user-images.githubusercontent.com/56310078/77938303-80fcf380-72f0-11ea-9695-2df938f62df2.JPG" height =500>
+
+[VGGNet paper](https://arxiv.org/pdf/1409.1556.pdf)
+[a model pre-trained on ImageNet](https://github.com/pytorch/vision/blob/master/torchvision/models/vgg.py)
+
+Dataset: cifar10
+`32x32` -> `16x16` -> `8x8` -> `4x4` -> `2x2` -> `1x1` with 5 maxpooling and same padding(conv2d)
+
+[...4.Study net](#4-study-net)
+
+## GAN
+
+[GAN](https://arxiv.org/pdf/1406.2661.pdf)
 
 ## 5. Author
 Nanhee Kim / [@nh9k ](https://github.com/nh9k)
