@@ -20,7 +20,7 @@
 |GAN|CycleGAN|StarGAN|
 
 - [x] LeNet
-- [ ] VGG Net
+- [x] VGG Net
 - [ ] GAN
 - [ ] U-Net
 - [ ] CycleGAN
@@ -148,13 +148,26 @@ bash -x run_eval.sh
 ```
 tensorboard --logdir=result/tensorboard
 ```
+**Use matplotlib for input image**
+```
+python3 show_input.py
+```
+**Use matplotlib for log**
+```
+python3 log_print.py
+```
 
 ### (3) Results
 
-||
+|tensorboard|
 |---|
 |![loss](https://user-images.githubusercontent.com/56310078/78297352-5ae28800-756a-11ea-8a63-9333cb385b4f.gif)|
 |![accuracy](https://user-images.githubusercontent.com/56310078/78297345-58802e00-756a-11ea-8c85-d81cd10a5225.gif)|
+
+|matplotlib|
+|---|
+|![Figure_1](https://user-images.githubusercontent.com/56310078/78297930-9c276780-756b-11ea-81d6-a8be3719d916.jpeg)|
+|![Figure_2](https://user-images.githubusercontent.com/56310078/78297932-9d589480-756b-11ea-8242-253d586241cf.jpeg)|
 
 **vgg11 test**
 ```
@@ -173,12 +186,6 @@ Accuracy of truck : 84 %
 
 **vgg13 test**
 ```
-started model:  vgg13
-Files already downloaded and verified
-Files already downloaded and verified
-GroundTruth:    cat  ship  ship plane
-<Figure size 640x480 with 1 Axes>
-Predicted:    cat  ship  ship plane
 Accuracy of the network on the 10000 test images: 76 %
 Accuracy of plane : 72 %
 Accuracy of   car : 89 %
