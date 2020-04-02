@@ -1,0 +1,108 @@
++ LIST_PTH='
+vgg11.pth
+vgg13.pth
+vgg16_1.pth
+vgg16.pth
+vgg19.pth
+'
++ for modelpth in $LIST_PTH
++ python3 eval.py --checkpoint_path=vgg11.pth
+started model:  vgg11
+Files already downloaded and verified
+Files already downloaded and verified
+GroundTruth:    cat  ship  ship plane
+<Figure size 640x480 with 1 Axes>
+Predicted:    cat  ship  ship plane
+Accuracy of the network on the 10000 test images: 75 %
+Accuracy of plane : 72 %
+Accuracy of   car : 85 %
+Accuracy of  bird : 60 %
+Accuracy of   cat : 47 %
+Accuracy of  deer : 77 %
+Accuracy of   dog : 63 %
+Accuracy of  frog : 80 %
+Accuracy of horse : 76 %
+Accuracy of  ship : 87 %
+Accuracy of truck : 84 %
++ for modelpth in $LIST_PTH
++ python3 eval.py --checkpoint_path=vgg13.pth
+started model:  vgg13
+Files already downloaded and verified
+Files already downloaded and verified
+GroundTruth:    cat  ship  ship plane
+<Figure size 640x480 with 1 Axes>
+Predicted:    cat  ship  ship plane
+started model:  vgg13
+Files already downloaded and verified
+Files already downloaded and verified
+GroundTruth:    cat  ship  ship plane
+<Figure size 640x480 with 1 Axes>
+Predicted:    cat  ship  ship plane
+Accuracy of the network on the 10000 test images: 76 %
+Accuracy of plane : 72 %
+Accuracy of   car : 89 %
+Accuracy of  bird : 72 %
+Accuracy of   cat : 55 %
+Accuracy of  deer : 70 %
+Accuracy of   dog : 66 %
+Accuracy of  frog : 75 %
+Accuracy of horse : 80 %
+Accuracy of  ship : 90 %
+Accuracy of truck : 82 %
++ for modelpth in $LIST_PTH
++ python3 eval.py --checkpoint_path=vgg16_1.pth
+started model:  vgg16_1
+Files already downloaded and verified
+Files already downloaded and verified
+GroundTruth:    cat  ship  ship plane
+<Figure size 640x480 with 1 Axes>
+Predicted:    cat  ship  ship plane
+Accuracy of the network on the 10000 test images: 76 %
+Accuracy of plane : 82 %
+Accuracy of   car : 92 %
+Accuracy of  bird : 66 %
+Accuracy of   cat : 47 %
+Accuracy of  deer : 74 %
+Accuracy of   dog : 78 %
+Accuracy of  frog : 72 %
+Accuracy of horse : 88 %
+Accuracy of  ship : 87 %
+Accuracy of truck : 71 %
++ for modelpth in $LIST_PTH
++ python3 eval.py --checkpoint_path=vgg16.pth
+started model:  vgg16
+Files already downloaded and verified
+Files already downloaded and verified
+GroundTruth:    cat  ship  ship plane
+<Figure size 640x480 with 1 Axes>
+Predicted:    cat  ship  ship plane
+Accuracy of the network on the 10000 test images: 77 %
+Accuracy of plane : 79 %
+Accuracy of   car : 85 %
+Accuracy of  bird : 81 %
+Accuracy of   cat : 55 %
+Accuracy of  deer : 66 %
+Accuracy of   dog : 60 %
+Accuracy of  frog : 86 %
+Accuracy of horse : 92 %
+Accuracy of  ship : 90 %
+Accuracy of truck : 69 %
++ for modelpth in $LIST_PTH
++ python3 eval.py --checkpoint_path=vgg19.pth
+started model:  vgg19
+Files already downloaded and verified
+Files already downloaded and verified
+GroundTruth:    cat  ship  ship plane
+<Figure size 640x480 with 1 Axes>
+Predicted:    cat  ship  ship plane
+Accuracy of the network on the 10000 test images: 76 %
+Accuracy of plane : 65 %
+Accuracy of   car : 82 %
+Accuracy of  bird : 60 %
+Accuracy of   cat : 58 %
+Accuracy of  deer : 66 %
+Accuracy of   dog : 60 %
+Accuracy of  frog : 83 %
+Accuracy of horse : 80 %
+Accuracy of  ship : 87 %
+Accuracy of truck : 84 %
