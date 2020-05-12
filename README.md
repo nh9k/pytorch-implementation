@@ -3,7 +3,8 @@
 ## Outline
 ||||||
 |---|---|---|---|---|
-|[1. Goal](#1-goal)|[2. Using Google colab](#2-using-google-colab)|[3. Install Pytorch - With PyCharm](#3-install-pytorch---with-pycharm)|[4. Study net](#4-study-net)|[5. Author](#5-Author)|
+|[1. Goal](#1-goal)|[2. Using Google colab](#2-using-google-colab)|[3. Install Pytorch - With PyCharm](#3-install-pytorch---with-pycharm)|[4. Study nets](#4-study-nets)|[5. Author](#5-Author)|
+
 
 
 ## 1. Goal
@@ -11,13 +12,13 @@
 | | | |
 | :------------ | :-----------: | :-----------: |
 |  **Classfication**| | |
-|LeNet|VGG Net|EfficientNet|
+|[LeNet5](#LeNet5)|[VGGNet](#VGGNet)|EfficientNet|
 | **Object detection** |  | |
 |YOLO|Faster R-CNN||
 | **Segmentation** |||
 |U-Net|Mask R-CNN||
 | **Generative model** | | |
-|GAN|CycleGAN|StarGAN|
+|[GAN](#GAN)|CycleGAN|StarGAN|
 
 - [x] LeNet
 - [x] VGG Net
@@ -30,8 +31,10 @@
 - [ ] YOLO
 - [ ] Mask R-CNN with COCO Dataset
 
-[...Outline](#outline)
+[Go Outline](#outline)
 
+
+  
 ## 2. Using Google colab
 
 
@@ -51,23 +54,29 @@ cd tutorials/beginner_source/blitz
 !python3 cifar10_tutorial.py
 ```
 
-[...Outline](#outline)
+[Go Outline](#outline)
 
+
+  
 ## 3. Install Pytorch - With PyCharm
 
 you can see contents about installing pytorch here!
 [myNaverBlog Link](https://blog.naver.com/kimnanhee97/221859176834)
 
-[...Outline](#outline)
+[Go Outline](#outline)
 
-## 4. Study net
+
+  
+## 4. Study nets
 
 |model|||||
 |---|---|---|---|---|
 |[LeNet5](#LeNet5) |[VGGNet](#VGGNet)|[GAN](#GAN)|||
 
-[...Outline](#outline)  
+[Go Outline](#outline)  
 
+
+  
 ## LeNet5
 
 ![lenet-5](https://user-images.githubusercontent.com/56310078/77683274-7afad000-6fdb-11ea-8263-9792c3c583d7.png)
@@ -115,8 +124,10 @@ Accuracy of horse : 62 %
 Accuracy of  ship : 58 %
 Accuracy of truck : 67 %
 ```
-[...4.Study net](#4-study-net) 
+[Go 4.Study nets](#4-study-nets) 
 
+
+  
 ## VGGNet
 
 <img src="https://user-images.githubusercontent.com/56310078/77938303-80fcf380-72f0-11ea-9695-2df938f62df2.JPG" height =500>
@@ -161,8 +172,8 @@ python3 log_print.py
 
 |tensorboard|
 |---|
-|![loss](https://user-images.githubusercontent.com/56310078/78297352-5ae28800-756a-11ea-8a63-9333cb385b4f.gif)|
-|![accuracy](https://user-images.githubusercontent.com/56310078/78297345-58802e00-756a-11ea-8c85-d81cd10a5225.gif)|
+|![Loss](https://user-images.githubusercontent.com/56310078/81693679-36e46180-949b-11ea-9535-be43ed945515.gif)|
+|![Accuracy](https://user-images.githubusercontent.com/56310078/81693675-35b33480-949b-11ea-9ba5-73c2b0cc6cfb.gif)|
 
 |matplotlib|
 |---|
@@ -244,13 +255,17 @@ Accuracy of  ship : 87 %
 Accuracy of truck : 84 %
 ```
 
-[...4.Study net](#4-study-net)
+[Go 4.Study nets](#4-study-nets)
 
+
+  
 ## GAN
 
 [GAN paper](https://arxiv.org/pdf/1406.2661.pdf)   
 
-[...4.Study net](#4-study-net)
+[Go 4.Study net](#4-study-nets)
 
+
+  
 ## 5. Author
 Nanhee Kim / [@nh9k ](https://github.com/nh9k)
