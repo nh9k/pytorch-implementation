@@ -281,53 +281,55 @@ cd GAN
 python train.py
 ```
 
-### (3) Issues
+### (3) Experiments and Issues
 
-1. BatchNorm function applied in model Generator
-2. Discriminator layers simplication
-3. Model input/output should be same image shape(scale)
-4. for training, do care using 'fake_imgs.detach()' or 'backward(retain_graph=True)'
+1. `BatchNorm` function applied in model `Generator`
+2. `Discriminator` layers `simplication`
+3. `Model input/output` should be same `image shape`(scale)
+4. for training, do care using `fake_imgs.detach()` or `backward(retain_graph=True)`
 
 The above issues are very important for training GAN 
 
 ### (4) Results
 
-Base model: using `ReLU`
-
-1. Using 'LeakyReLU' instead of 'ReLU'
+Base model: using `ReLU`  
+vest model: using `LeakyReLU`
+  
+1. Using `LeakyReLU` instead of `ReLU`
 
 |500|1000|1500|2000|2500|
 |---|---|---|---|---|
-|||||
-|20000|40000|60000|80000|Result(gif)|
-|||||
+|![500](https://user-images.githubusercontent.com/56310078/81840814-7470e980-9584-11ea-988b-77f8fcb74d06.png)|![1000](https://user-images.githubusercontent.com/56310078/81840815-75098000-9584-11ea-9df0-fbf812b5b56c.png)|![1500](https://user-images.githubusercontent.com/56310078/81840816-75a21680-9584-11ea-98fa-e15c6ea515a3.png)|![2000](https://user-images.githubusercontent.com/56310078/81840819-763aad00-9584-11ea-956a-dcd1f47b8c3b.png)|![2500](https://user-images.githubusercontent.com/56310078/81840822-763aad00-9584-11ea-88e4-627a8c9466eb.png)|
+|40000|60000|80000|90000|Result(gif)|
+|![40000](https://user-images.githubusercontent.com/56310078/81840891-91a5b800-9584-11ea-95b4-302057efaa82.png)|![60000](https://user-images.githubusercontent.com/56310078/81840892-91a5b800-9584-11ea-8893-68e61fef46e2.png)|![80000](https://user-images.githubusercontent.com/56310078/81840895-923e4e80-9584-11ea-9135-8c87cda7d287.png)|![90000](https://user-images.githubusercontent.com/56310078/81840886-90748b00-9584-11ea-9120-c127d19587e8.png)|![gifimage](https://user-images.githubusercontent.com/56310078/81841457-6f606a00-9585-11ea-9771-906fddb2b78f.gif)|
 
-2. Using 'ReLU' instead of 'LeakyReLU'
+2. Using `ReLU` instead of `LeakyReLU`
 
 |500|1000|1500|2000|2500|
 |---|---|---|---|---|
 |![500](https://user-images.githubusercontent.com/56310078/81838175-bef06700-9580-11ea-8752-2ad297e7a1a9.png)|![1000](https://user-images.githubusercontent.com/56310078/81838177-bf88fd80-9580-11ea-87d3-c212b5e85ad7.png)|![1500](https://user-images.githubusercontent.com/56310078/81838181-c0219400-9580-11ea-9d3a-ac0bf7cc8b3a.png)|![2000](https://user-images.githubusercontent.com/56310078/81838184-c0219400-9580-11ea-905a-aeb67ea1e0c6.png)|![2500](https://user-images.githubusercontent.com/56310078/81838185-c0ba2a80-9580-11ea-85dd-1b5387123eed.png)|
 |20000|40000|60000|80000|Result(gif)|
-|![20000](https://user-images.githubusercontent.com/56310078/81838186-c152c100-9580-11ea-9499-7bc43e305fea.png)|![40000](https://user-images.githubusercontent.com/56310078/81838187-c152c100-9580-11ea-8a89-d577948ba6d4.png)|![60000](https://user-images.githubusercontent.com/56310078/81838172-be57d080-9580-11ea-9060-3a07f929dc32.png)|![80000](https://user-images.githubusercontent.com/56310078/81838719-7a190000-9581-11ea-8748-633c20a6f36c.png)
-||
-3. No BatchNorm in model
+|![20000](https://user-images.githubusercontent.com/56310078/81838186-c152c100-9580-11ea-9499-7bc43e305fea.png)|![40000](https://user-images.githubusercontent.com/56310078/81838187-c152c100-9580-11ea-8a89-d577948ba6d4.png)|![60000](https://user-images.githubusercontent.com/56310078/81838172-be57d080-9580-11ea-9060-3a07f929dc32.png)|![80000](https://user-images.githubusercontent.com/56310078/81838719-7a190000-9581-11ea-8748-633c20a6f36c.png)|![gifimage](https://user-images.githubusercontent.com/56310078/81839590-bac54900-9582-11ea-88fb-a5500c355f01.gif)|
+
+3. `No BatchNorm` in model
 
 |500|1000|1500|2000|2500|
 |---|---|---|---|---|
 |![500](https://user-images.githubusercontent.com/56310078/81836203-1d681600-957e-11ea-8c46-86fc0a72bd9a.png)|![1000](https://user-images.githubusercontent.com/56310078/81836208-1e994300-957e-11ea-8fd3-9a858dc6cc24.png)|![1500](https://user-images.githubusercontent.com/56310078/81836209-1e994300-957e-11ea-8097-83f5dec72f9a.png)|![2000](https://user-images.githubusercontent.com/56310078/81836211-1f31d980-957e-11ea-967a-f2140ddaff86.png)|![2500](https://user-images.githubusercontent.com/56310078/81836212-1f31d980-957e-11ea-95fc-06134a3a01f7.png)|
 
-4. No Simplication of Discriminator layers
+4. `No Simplication` of Discriminator layers
 
 |500|1000|1500|2000|2500|
 |---|---|---|---|---|
 |![500](https://user-images.githubusercontent.com/56310078/81836311-425c8900-957e-11ea-9c79-953b98aa95f9.png)|![1000](https://user-images.githubusercontent.com/56310078/81836314-438db600-957e-11ea-9f2c-ad7c004ea6f7.png)|![1500](https://user-images.githubusercontent.com/56310078/81836315-438db600-957e-11ea-8426-9e6a4ac3c1bf.png)|![2000](https://user-images.githubusercontent.com/56310078/81836318-44264c80-957e-11ea-9c83-e7259cbdded2.png)|![2500](https://user-images.githubusercontent.com/56310078/81836320-44264c80-957e-11ea-82a4-f18bae9a1452.png)|
 
-5. 'backward(retain_graph=True)' instead of 'fake_imgs.detach()'
+5. `backward(retain_graph=True)` instead of `fake_imgs.detach()`
 
 |500|1000|1500|2000|2500|
 |---|---|---|---|---|
 |![500](https://user-images.githubusercontent.com/56310078/81836880-083fb700-957f-11ea-96bc-8a929590ee0a.png)|![1000](https://user-images.githubusercontent.com/56310078/81836883-083fb700-957f-11ea-9166-445330da8220.png)|![1500](https://user-images.githubusercontent.com/56310078/81836886-08d84d80-957f-11ea-82d5-711e9f2c1182.png)|![2000](https://user-images.githubusercontent.com/56310078/81836888-0970e400-957f-11ea-8941-320477e14e24.png)|![2500](https://user-images.githubusercontent.com/56310078/81836875-07a72080-957f-11ea-984e-6782909bf7c6.png)|
 
+  
 [Go 4.Study net](#4-study-nets)
 
 
