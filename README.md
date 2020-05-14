@@ -9,16 +9,16 @@
 
 ## 1. Goal
 
-| | | |
-| :------------ | :-----------: | :-----------: |
-|  **Classfication**| | |
-|[LeNet5](#LeNet5)|[VGGNet](#VGGNet)|EfficientNet|
-| **Object detection** |  | |
-|YOLO|Faster R-CNN||
-| **Segmentation** |||
-|U-Net|Mask R-CNN||
-| **Generative model** | | |
-|[GAN](#GAN)|CycleGAN|StarGAN|
+| | | ||
+| :------------ | :-----------: | :-----------: |:-----------: |
+|  **Classfication & Backbone**||||
+|[LeNet5](#LeNet5)|[VGGNet](#VGGNet)|(Resnet)|EfficientNet|
+| **Object detection**||||
+|YOLO|Faster R-CNN|||
+| **Segmentation**||||
+|U-Net|(DeepLabV3)|Mask R-CNN||
+| **Generative model** ||||
+|[GAN](#GAN)|(DCGAN)|CycleGAN|StarGAN|
 
 - [x] LeNet
 - [x] VGG Net
@@ -335,7 +335,15 @@ vest model: using `LeakyReLU`
   
 [Go 4.Study net](#4-study-nets)
 
+## U-Net
 
+![Unet](https://user-images.githubusercontent.com/56310078/81949340-b9a52200-963d-11ea-8b32-d247d4b5c042.JPG)
+
+[[U-Net Paper]](https://arxiv.org/pdf/1505.04597.pdf) 
+  
+Dataset: 
+
+[Go 4.Study net](#4-study-nets)
   
 ## 5. Author
 Nanhee Kim / [@nh9k ](https://github.com/nh9k)
