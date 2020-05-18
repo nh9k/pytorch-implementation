@@ -12,23 +12,26 @@
 | | | ||
 | :------------ | :-----------: | :-----------: |:-----------: |
 |  **Classfication & Backbone**||||
-|[LeNet5](#LeNet5)|[VGGNet](#VGGNet)|(Resnet)|EfficientNet|
+|[LeNet5](#LeNet5)|[VGGNet](#VGGNet)|(ResNet)|EfficientNet|
 | **Object detection**||||
-|YOLO|Faster R-CNN|||
+|YOLO(V3)|Faster R-CNN|||
 | **Segmentation**||||
-|U-Net|(DeepLabV3)|Mask R-CNN||
+|[U-Net](#U-Net)|(DeepLabV3)|Mask R-CNN||
 | **Generative model** ||||
-|[GAN](#GAN)|(DCGAN)|CycleGAN|StarGAN|
+|[GAN](#GAN)|(DCGAN)|CycleGAN|StarGAN(V1/V2)|
 
 - [x] LeNet
 - [x] VGG Net
+- [ ] (ResNet)
 - [x] GAN
+- [ ] (DCGAN)
 - [ ] U-Net
 - [ ] CycleGAN
-- [ ] StarGAN
+- [ ] StarGAN(V1/V2)
 - [ ] Faster R-CNN
 - [ ] EfficientNet
-- [ ] YOLO
+- [ ] (DeepLabV3)
+- [ ] YOLO(V3)
 - [ ] Mask R-CNN with COCO Dataset
 
 [Go Outline](#outline)
