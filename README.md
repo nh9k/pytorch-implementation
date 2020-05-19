@@ -1,4 +1,4 @@
-# Study_Pytorch
+# Study_Pytorch: model implementation
 
 ## Outline
 ||||||
@@ -20,10 +20,10 @@
 | **Generative model** ||||
 |[GAN](#GAN)|(DCGAN)|CycleGAN|StarGAN(V1/V2)|
 
-- [x] LeNet
-- [x] VGG Net
+- [x] LeNet(2020.04)
+- [x] VGG Net(2020.04)
 - [ ] (ResNet)
-- [x] GAN
+- [x] GAN(2020.05)
 - [ ] (DCGAN)
 - [ ] U-Net
 - [ ] CycleGAN
@@ -85,8 +85,10 @@ you can see contents about installing pytorch here!
 ![lenet-5](https://user-images.githubusercontent.com/56310078/77683274-7afad000-6fdb-11ea-8263-9792c3c583d7.png)
 
 [[LeNet5 paper]](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)  
-[[cifar10 information]](https://www.cs.toronto.edu/~kriz/cifar.html)
-
+[[cifar10 information]](https://www.cs.toronto.edu/~kriz/cifar.html)  
+[[model-code]](https://github.com/nh9k/pytorch-implementation/blob/master/1_lenet5/lenet5.py)  
+[[training-code]](https://github.com/nh9k/pytorch-implementation/blob/master/1_lenet5/train.py)
+  
 ### (1) Prerequisites
 
 - numpy>=1.18.1
@@ -140,6 +142,10 @@ Accuracy of truck : 67 %
 
 Dataset: cifar10  
 `32x32` -> `16x16` -> `8x8` -> `4x4` -> `2x2` -> `1x1` with 5 maxpooling and same padding(conv2d)
+
+[[model-code]](https://github.com/nh9k/pytorch-implementation/blob/master/2_vggnet/vggnet.py)  
+[[training-code]](https://github.com/nh9k/pytorch-implementation/blob/master/2_vggnet/train.py)
+  
 
 ### (1) Prerequisites
 - numpy
@@ -267,7 +273,10 @@ Accuracy of truck : 84 %
 ![GAN_Loss](https://user-images.githubusercontent.com/56310078/81842190-8fdcf400-9586-11ea-9fff-548a54017abd.JPG)
 ![GAN_Data_training](https://user-images.githubusercontent.com/56310078/81842193-90758a80-9586-11ea-8655-f09d49ee915c.JPG)
 
-[[GAN paper]](https://arxiv.org/pdf/1406.2661.pdf) 
+[[GAN paper]](https://arxiv.org/pdf/1406.2661.pdf)  
+[[model-code]](https://github.com/nh9k/pytorch-implementation/blob/master/3_GAN/versionLeakyReLU/GAN.py)  
+[[training-code]](https://github.com/nh9k/pytorch-implementation/blob/master/3_GAN/versionLeakyReLU/train.py)
+  
   
 Dataset: MNIST 
 
