@@ -386,8 +386,8 @@ tensorboard --logdir=runs/no_batch_normalization or add_batch_normalization
 ```
 
 * Jupyter Notebook & Colab :   
-[no batch normalization result & code](https://github.com/nh9k/pytorch-implementation/blob/master/4_U-Net/unet.ipynb)  
-[add batch normalization result & code](#)
+[no batch normalization result & code](https://github.com/nh9k/pytorch-implementation/blob/master/4_U-Net/ipynb/no_batch_normalization/unet.ipynb)  
+[add batch normalization result & code](https://github.com/nh9k/pytorch-implementation/blob/master/4_U-Net/ipynb/add_batch_normalization/unet.ipynb)
 
 ### (3) Experiments and Results   
 `Cross Entropy Loss` is correct because the output segmentation map channels of the last layer is `2` in the paper, but i modified it to `1` and used `Binary Cross Entropy`  
