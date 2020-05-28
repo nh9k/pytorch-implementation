@@ -25,7 +25,7 @@
 - [ ] (ResNet)
 - [x] GAN(2020.05)
 - [ ] (DCGAN)
-- [ ] U-Net
+- [x] U-Net(2020.05)
 - [ ] CycleGAN
 - [ ] StarGAN(V1/V2)
 - [ ] Faster R-CNN
@@ -74,7 +74,7 @@ you can see contents about installing pytorch here!
 
 |model|||||
 |---|---|---|---|---|
-|[LeNet5](#LeNet5) |[VGGNet](#VGGNet)|[GAN](#GAN)|||
+|[LeNet5](#LeNet5) |[VGGNet](#VGGNet)|[GAN](#GAN)|[U-Net](#U-Net)||
 
 [Go Outline](#outline)  
 
@@ -307,7 +307,7 @@ The above issues are very important for training GAN
 ### (4) Results
 
 Base model: using `ReLU`  
-vest model: using `LeakyReLU`
+Best model: using `LeakyReLU`
   
 1. Using `LeakyReLU` instead of `ReLU`
 
@@ -351,38 +351,48 @@ vest model: using `LeakyReLU`
 ![Unet](https://user-images.githubusercontent.com/56310078/81949340-b9a52200-963d-11ea-8b32-d247d4b5c042.JPG)
 
 [[U-Net Paper]](https://arxiv.org/pdf/1505.04597.pdf) 
-[[The full implementation (based on Caffe) and the trained networks]](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)  
+[[The full implementation (based on Caffe) and the trained networks]](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
+[[model-code]](https://github.com/nh9k/pytorch-implementation/blob/master/4_U-Net/UNet.py)
   
 Dataset: [isbi_challenge](http://brainiac2.mit.edu/isbi_challenge/home)  
 you can download segmentation dataset after join in the page.  
+  
+### (1) Prerequisites
 
-(1) Usage  
+- numpy
+- torch
+- torchvision
+- Pillow
+- matplotlib
 
-* Training : [code](#)
+### (2) Usage  
+
+* Training : [code](https://github.com/nh9k/pytorch-implementation/blob/master/4_U-Net/train.py)
 ```
 cd U-Net
 python train.py
 ```
 
-* Test : [code](#)
+* Test : [code](https://github.com/nh9k/pytorch-implementation/blob/master/4_U-Net/eval.py)
 ```
 cd U-Net
 python eval.py
 ```
 
-* Tensorboard : [code](#)
+* Tensorboard
 ```
 cd U-Net
 tensorboard --logdir=runs
 ```
 ![Loss_tensorboard](https://user-images.githubusercontent.com/56310078/83134531-778cdd80-a11f-11ea-9268-58246a7c3c2e.PNG)  
 
-(2) Experiments and Results   
+* Jupyter Notebook & Colab : [code](https://github.com/nh9k/pytorch-implementation/blob/master/4_U-Net/unet.ipynb)
+
+### (3) Experiments and Results   
 `Cross Entropy Loss` is correct because the output segmentation map channels of the last layer is `2` in the paper, but i modified it to `1` and used `Binary Cross Entropy`  
+  
 
-Test: [Loss: 0.239]  
-
-|Inputs|Labels|Outputs|
+|Inputs|Labels|Outputs(Test Loss: 0.239)|
 |---|---|---|
 |![inputs0](https://user-images.githubusercontent.com/56310078/83134546-7c519180-a11f-11ea-81db-2cb18578eb2d.png)|![labels0](https://user-images.githubusercontent.com/56310078/83134559-7fe51880-a11f-11ea-89a9-0b18daf6e942.png)|![outputs0](https://user-images.githubusercontent.com/56310078/83134554-7eb3eb80-a11f-11ea-9cf5-13e631a9260b.png)|
 |![inputs1](https://user-images.githubusercontent.com/56310078/83134548-7d82be80-a11f-11ea-93d7-017d3c9ec879.png)|![labels1](https://user-images.githubusercontent.com/56310078/83134560-7fe51880-a11f-11ea-9b16-c3ff864d49cd.png)|![outputs1](https://user-images.githubusercontent.com/56310078/83134555-7f4c8200-a11f-11ea-9bab-68c963fa61a9.png)|
