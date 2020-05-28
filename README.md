@@ -402,6 +402,14 @@ tensorboard --logdir=runs/no_batch_normalization or add_batch_normalization
 |![inputs2](https://user-images.githubusercontent.com/56310078/83134551-7e1b5500-a11f-11ea-90b2-71f89142c536.png)|![labels2](https://user-images.githubusercontent.com/56310078/83134561-807daf00-a11f-11ea-9dcb-f5e0ff249608.png)|![outputs2](https://user-images.githubusercontent.com/56310078/83134557-7f4c8200-a11f-11ea-819c-ace3d57a93bc.png)|
 
 2. `added` batch normalization
+```
+## model file: UNet.py (line8~12), added batch normalization function
+        def DoubleConv(in_channels, out_channels):
+            layers = []
+            layers += [nn.Conv2d(in_channels, out_channels, kernel_size=3, stride=1, padding=1), nn.BatchNorm2d(num_features=out_channels), nn.ReLU(inplace=True)]
+            layers += [nn.Conv2d(out_channels, out_channels, kernel_size=3, stride=1, padding=1), nn.BatchNorm2d(num_features=out_channels), nn.ReLU(inplace=True)]
+            return nn.Sequential(*layers)
+```
 ![Loss_tensorboard](https://user-images.githubusercontent.com/56310078/83158846-453fa800-a140-11ea-8181-35a1beb6bb56.PNG)  
 
 |Inputs|Labels|Outputs(Test Loss: 0.103)|
