@@ -382,15 +382,18 @@ python eval.py
 * Tensorboard
 ```
 cd U-Net
-tensorboard --logdir=runs
+tensorboard --logdir=runs/no_batch_normalization or add_batch_normalization
 ```
-![Loss_tensorboard](https://user-images.githubusercontent.com/56310078/83134531-778cdd80-a11f-11ea-9268-58246a7c3c2e.PNG)  
 
-* Jupyter Notebook & Colab : [code](https://github.com/nh9k/pytorch-implementation/blob/master/4_U-Net/unet.ipynb)
+* Jupyter Notebook & Colab :   
+[no batch normalization result & code](https://github.com/nh9k/pytorch-implementation/blob/master/4_U-Net/unet.ipynb)  
+[add batch normalization result & code](#)
 
 ### (3) Experiments and Results   
 `Cross Entropy Loss` is correct because the output segmentation map channels of the last layer is `2` in the paper, but i modified it to `1` and used `Binary Cross Entropy`  
   
+1. `No` batch normalization
+![Loss_tensorboard](https://user-images.githubusercontent.com/56310078/83134531-778cdd80-a11f-11ea-9268-58246a7c3c2e.PNG)  
 
 |Inputs|Labels|Outputs(Test Loss: 0.239)|
 |---|---|---|
@@ -398,6 +401,14 @@ tensorboard --logdir=runs
 |![inputs1](https://user-images.githubusercontent.com/56310078/83134548-7d82be80-a11f-11ea-93d7-017d3c9ec879.png)|![labels1](https://user-images.githubusercontent.com/56310078/83134560-7fe51880-a11f-11ea-9b16-c3ff864d49cd.png)|![outputs1](https://user-images.githubusercontent.com/56310078/83134555-7f4c8200-a11f-11ea-9bab-68c963fa61a9.png)|
 |![inputs2](https://user-images.githubusercontent.com/56310078/83134551-7e1b5500-a11f-11ea-90b2-71f89142c536.png)|![labels2](https://user-images.githubusercontent.com/56310078/83134561-807daf00-a11f-11ea-9dcb-f5e0ff249608.png)|![outputs2](https://user-images.githubusercontent.com/56310078/83134557-7f4c8200-a11f-11ea-819c-ace3d57a93bc.png)|
 
+2. `added` batch normalization
+![Loss_tensorboard](https://user-images.githubusercontent.com/56310078/83158846-453fa800-a140-11ea-8181-35a1beb6bb56.PNG)  
+
+|Inputs|Labels|Outputs(Test Loss: 0.103)|
+|---|---|---|
+|![inputs0](https://user-images.githubusercontent.com/56310078/83158396-b3d03600-a13f-11ea-97ae-b0705ad07a5a.png)|![labels0](https://user-images.githubusercontent.com/56310078/83158407-b6329000-a13f-11ea-9d34-579c81d392af.png)|![outputs0](https://user-images.githubusercontent.com/56310078/83158413-b763bd00-a13f-11ea-9cc0-7261e697d624.png)|
+|![inputs1](https://user-images.githubusercontent.com/56310078/83158404-b5016300-a13f-11ea-805a-3db8aedd8f1f.png)|![labels1](https://user-images.githubusercontent.com/56310078/83158409-b6cb2680-a13f-11ea-963a-f5ac04d99f31.png)|![outputs1](https://user-images.githubusercontent.com/56310078/83158417-b7fc5380-a13f-11ea-8484-223b3f57a59e.png)|
+|![inputs2](https://user-images.githubusercontent.com/56310078/83158406-b599f980-a13f-11ea-8f40-11f34c3398b8.png)|![labels2](https://user-images.githubusercontent.com/56310078/83158410-b6cb2680-a13f-11ea-8b7a-b7d1ab5e48d8.png)|![outputs2](https://user-images.githubusercontent.com/56310078/83158419-b7fc5380-a13f-11ea-8f89-a3dae83a38ad.png)|
 
 [Go 4.Study net](#4-study-nets)
   
