@@ -84,9 +84,9 @@ you can see contents about installing pytorch here!
 
 ![lenet-5](https://user-images.githubusercontent.com/56310078/77683274-7afad000-6fdb-11ea-8263-9792c3c583d7.png)
 
-[[LeNet5 paper]](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)  
-[[cifar10 information]](https://www.cs.toronto.edu/~kriz/cifar.html)  
-[[model-code]](https://github.com/nh9k/pytorch-implementation/blob/master/1_lenet5/lenet5.py)  
+[[paper]](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)
+[[cifar10 information]](https://www.cs.toronto.edu/~kriz/cifar.html)
+[[model-code]](https://github.com/nh9k/pytorch-implementation/blob/master/1_lenet5/lenet5.py)
 [[training-code]](https://github.com/nh9k/pytorch-implementation/blob/master/1_lenet5/train.py)
   
 ### (1) Prerequisites
@@ -137,15 +137,14 @@ Accuracy of truck : 67 %
 
 <img src="https://user-images.githubusercontent.com/56310078/77938303-80fcf380-72f0-11ea-9695-2df938f62df2.JPG" height =500>
 
-[[VGGNet paper]](https://arxiv.org/pdf/1409.1556.pdf)  
-[[torchvision]: a model pre-trained on ImageNet](https://github.com/pytorch/vision/blob/master/torchvision/models/vgg.py)
+[[VGGNet paper]](https://arxiv.org/pdf/1409.1556.pdf)
+[[torchvision: a model pre-trained on ImageNet]](https://github.com/pytorch/vision/blob/master/torchvision/models/vgg.py)
+[[model-code]](https://github.com/nh9k/pytorch-implementation/blob/master/2_vggnet/vggnet.py) 
+[[training-code]](https://github.com/nh9k/pytorch-implementation/blob/master/2_vggnet/train.py)
 
 Dataset: cifar10  
 `32x32` -> `16x16` -> `8x8` -> `4x4` -> `2x2` -> `1x1` with 5 maxpooling and same padding(conv2d)
 
-[[model-code]](https://github.com/nh9k/pytorch-implementation/blob/master/2_vggnet/vggnet.py)  
-[[training-code]](https://github.com/nh9k/pytorch-implementation/blob/master/2_vggnet/train.py)
-  
 
 ### (1) Prerequisites
 - numpy
@@ -156,11 +155,11 @@ Dataset: cifar10
 
 ### (2) Usage
 
-**Train a model**
+**Training**
 ```
 bash -x run_train.sh
 ```
-**Test the model**
+**Test**
 ```
 bash -x run_eval.sh
 ```
@@ -273,8 +272,8 @@ Accuracy of truck : 84 %
 ![GAN_Loss](https://user-images.githubusercontent.com/56310078/81842190-8fdcf400-9586-11ea-9fff-548a54017abd.JPG)
 ![GAN_Data_training](https://user-images.githubusercontent.com/56310078/81842193-90758a80-9586-11ea-8655-f09d49ee915c.JPG)
 
-[[GAN paper]](https://arxiv.org/pdf/1406.2661.pdf)  
-[[model-code]](https://github.com/nh9k/pytorch-implementation/blob/master/3_GAN/versionLeakyReLU/GAN.py)  
+[[GAN paper]](https://arxiv.org/pdf/1406.2661.pdf) 
+[[model-code]](https://github.com/nh9k/pytorch-implementation/blob/master/3_GAN/versionLeakyReLU/GAN.py) 
 [[training-code]](https://github.com/nh9k/pytorch-implementation/blob/master/3_GAN/versionLeakyReLU/train.py)
   
   
@@ -290,7 +289,7 @@ Dataset: MNIST
 
 ### (2) Usage
 
-**Train a model**
+**Training**
 ```
 cd GAN
 python train.py
@@ -352,8 +351,43 @@ vest model: using `LeakyReLU`
 ![Unet](https://user-images.githubusercontent.com/56310078/81949340-b9a52200-963d-11ea-8b32-d247d4b5c042.JPG)
 
 [[U-Net Paper]](https://arxiv.org/pdf/1505.04597.pdf) 
+[[The full implementation (based on Caffe) and the trained networks]](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)  
   
-Dataset: 
+Dataset: [isbi_challenge](http://brainiac2.mit.edu/isbi_challenge/home)  
+you can download segmentation dataset after join in the page.  
+
+(1) Usage  
+
+* Training : [code](#)
+```
+cd U-Net
+python train.py
+```
+
+* Test : [code](#)
+```
+cd U-Net
+python eval.py
+```
+
+* Tensorboard : [code](#)
+```
+cd U-Net
+tensorboard --logdir=runs
+```
+![Loss_tensorboard](https://user-images.githubusercontent.com/56310078/83134531-778cdd80-a11f-11ea-9268-58246a7c3c2e.PNG)  
+
+(2) Experiments and Results   
+`Cross Entropy Loss` is correct because the output segmentation map channels of the last layer is `2` in the paper, but i modified it to `1` and used `Binary Cross Entropy`  
+
+Test: [Loss: 0.239]  
+
+|Inputs|Labels|Outputs|
+|---|---|---|
+|![inputs0](https://user-images.githubusercontent.com/56310078/83134546-7c519180-a11f-11ea-81db-2cb18578eb2d.png)|![labels0](https://user-images.githubusercontent.com/56310078/83134559-7fe51880-a11f-11ea-89a9-0b18daf6e942.png)|![outputs0](https://user-images.githubusercontent.com/56310078/83134554-7eb3eb80-a11f-11ea-9cf5-13e631a9260b.png)|
+|![inputs1](https://user-images.githubusercontent.com/56310078/83134548-7d82be80-a11f-11ea-93d7-017d3c9ec879.png)|![labels1](https://user-images.githubusercontent.com/56310078/83134560-7fe51880-a11f-11ea-9b16-c3ff864d49cd.png)|![outputs1](https://user-images.githubusercontent.com/56310078/83134555-7f4c8200-a11f-11ea-9bab-68c963fa61a9.png)|
+|![inputs2](https://user-images.githubusercontent.com/56310078/83134551-7e1b5500-a11f-11ea-90b2-71f89142c536.png)|![labels2](https://user-images.githubusercontent.com/56310078/83134561-807daf00-a11f-11ea-9dcb-f5e0ff249608.png)|![outputs2](https://user-images.githubusercontent.com/56310078/83134557-7f4c8200-a11f-11ea-819c-ace3d57a93bc.png)|
+
 
 [Go 4.Study net](#4-study-nets)
   
