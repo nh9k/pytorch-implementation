@@ -18,7 +18,7 @@
 | **Segmentation**||||
 |[U-Net](#U-Net)|(DeepLabV3)|Mask R-CNN||
 | **Generative model** ||||
-|[GAN](#GAN)|(DCGAN)|CycleGAN|StarGAN(V1/V2)|
+|[GAN](#GAN)|(DCGAN)|[CycleGAN](#CycleGAN)|StarGAN(V1/V2)|
 
 - [x] LeNet(2020.04)
 - [x] VGG Net(2020.04)
@@ -74,7 +74,7 @@ you can see contents about installing pytorch here!
 
 |model|||||
 |---|---|---|---|---|
-|[LeNet5](#LeNet5) |[VGGNet](#VGGNet)|[GAN](#GAN)|[U-Net](#U-Net)||
+|[LeNet5](#LeNet5) |[VGGNet](#VGGNet)|[GAN](#GAN)|[U-Net](#U-Net)|[CycleGAN](#CycleGAN)|
 
 [Go Outline](#outline)  
 
@@ -84,7 +84,7 @@ you can see contents about installing pytorch here!
 
 ![lenet-5](https://user-images.githubusercontent.com/56310078/77683274-7afad000-6fdb-11ea-8263-9792c3c583d7.png)
 
-[[paper]](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)
+[[LeNet paper]](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)
 [[cifar10 information]](https://www.cs.toronto.edu/~kriz/cifar.html)
 [[model-code]](https://github.com/nh9k/pytorch-implementation/blob/master/1_lenet5/lenet5.py)
 [[training-code]](https://github.com/nh9k/pytorch-implementation/blob/master/1_lenet5/train.py)
@@ -401,5 +401,11 @@ tensorboard --logdir=runs
 
 [Go 4.Study net](#4-study-nets)
   
+## CycleGAN
+
+[[CycleGAN paper]](https://arxiv.org/pdf/1703.10593.pdf)
+
+[Go 4.Study net](#4-study-nets)
+
 ## 5. Author
 Nanhee Kim / [@nh9k ](https://github.com/nh9k)
