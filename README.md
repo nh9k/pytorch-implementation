@@ -5,6 +5,7 @@
 |---|---|---|---|---|
 |[1. Goal](#1-goal)|[2. Using Google colab](#2-using-google-colab)|[3. Install Pytorch - With PyCharm](#3-install-pytorch---with-pycharm)|[4. Study nets](#4-study-nets)|[5. Author](#5-Author)|
 
+<br/>  <br/>  
 
 
 ## 1. Goal  
@@ -18,7 +19,7 @@
 | **Object detection**||||
 |[(FPN)](#FPN)|YOLO(V3)|Faster R-CNN||
 | **Segmentation**||||
-|[(FCN)](#FCN)|[U-Net](#U-Net)|(DeepLab V3, V3+)|[Mask R-CNN](#)|
+|[(FCN)](#FCN)|[U-Net](#U-Net)|(DeepLab V3, V3+)|[Mask R-CNN](mask-r-cnn)|
 | **Generative model** ||||
 |[GAN](#GAN)|(DCGAN)|[CycleGAN](#CycleGAN)|StarGAN(V1,V2)|
 
@@ -39,10 +40,11 @@
 - [ ] YOLO(V3)
 
 
-[Go Outline](#outline)
+[Go Outline](#outline)  
+
+<br/>  <br/>  
 
 
-  
 ## 2. Using Google colab
 
 
@@ -62,33 +64,36 @@ cd tutorials/beginner_source/blitz
 !python3 cifar10_tutorial.py
 ```
 
-[Go Outline](#outline)
+[Go Outline](#outline)  
+
+<br/>  <br/>  
 
 
-  
 ## 3. Install Pytorch - With PyCharm
 
 you can see contents about installing pytorch here!
-[myNaverBlog Link](https://blog.naver.com/kimnanhee97/221859176834)
+[Blog Link](https://blog.naver.com/kimnanhee97/221859176834)
 
-[Go Outline](#outline)
+[Go Outline](#outline)  
+
+<br/>  <br/>  
 
 
-  
 ## 4. Study nets
 
-|model|||||
+|model-Implementation|||||
 |---|---|---|---|---|
 |[LeNet5](#LeNet5) |[VGGNet](#VGGNet)|[GAN](#GAN)|[U-Net](#U-Net)|[CycleGAN](#CycleGAN)|
 
 |paper-review or study|||||
 |---|---|---|---|---|
-|[ResNet](#ResNet)|[FCN](#FCN)|[Mask R-CNN](#)||
+|[ResNet](#ResNet)|[CycleGAN](#CycleGAN)|[FCN](#FCN)|[Mask R-CNN](mask-r-cnn)||
 
 [Go Outline](#outline)  
 
+<br/>  <br/>  
 
-  
+
 ## LeNet5
 
 ![lenet-5](https://user-images.githubusercontent.com/56310078/77683274-7afad000-6fdb-11ea-8263-9792c3c583d7.png)
@@ -138,10 +143,11 @@ Accuracy of horse : 62 %
 Accuracy of  ship : 58 %
 Accuracy of truck : 67 %
 ```
-[Go 4.Study nets](#4-study-nets) 
+[Go 4.Study nets](#4-study-nets)  
+
+<br/>  <br/>  
 
 
-  
 ## VGGNet
 
 <img src="https://user-images.githubusercontent.com/56310078/77938303-80fcf380-72f0-11ea-9695-2df938f62df2.JPG" height =500>
@@ -274,8 +280,9 @@ Accuracy of  ship : 87 %
 Accuracy of truck : 84 %
 ```
 
-[Go 4.Study nets](#4-study-nets)
+[Go 4.Study nets](#4-study-nets)  
 
+<br/>  <br/>  
 
 
 ## ResNet
@@ -287,8 +294,9 @@ model is not implemented from my code, but I reviewed paper for my study.
 
 [Go 4.Study net](#4-study-nets)  
 
-  
-  
+<br/>  <br/>  
+
+
 ## GAN
 
 ![GAN_Loss](https://user-images.githubusercontent.com/56310078/81842190-8fdcf400-9586-11ea-9fff-548a54017abd.JPG)
@@ -366,8 +374,9 @@ Best model: using `LeakyReLU`
 |![500](https://user-images.githubusercontent.com/56310078/81836880-083fb700-957f-11ea-96bc-8a929590ee0a.png)|![1000](https://user-images.githubusercontent.com/56310078/81836883-083fb700-957f-11ea-9166-445330da8220.png)|![1500](https://user-images.githubusercontent.com/56310078/81836886-08d84d80-957f-11ea-82d5-711e9f2c1182.png)|![2000](https://user-images.githubusercontent.com/56310078/81836888-0970e400-957f-11ea-8941-320477e14e24.png)|![2500](https://user-images.githubusercontent.com/56310078/81836875-07a72080-957f-11ea-984e-6782909bf7c6.png)|
 
   
-[Go 4.Study net](#4-study-nets)
+[Go 4.Study net](#4-study-nets)  
 
+<br/>  <br/>  
 
 
 ## FCN
@@ -380,6 +389,7 @@ model is not implemented from my code, but I reviewed paper for my study.
 
 [Go 4.Study net](#4-study-nets)  
 
+<br/>  <br/>  
 
 
 ## U-Net
@@ -457,8 +467,11 @@ tensorboard --logdir=runs/no_batch_normalization or add_batch_normalization
 |![inputs1](https://user-images.githubusercontent.com/56310078/83158404-b5016300-a13f-11ea-805a-3db8aedd8f1f.png)|![labels1](https://user-images.githubusercontent.com/56310078/83158409-b6cb2680-a13f-11ea-963a-f5ac04d99f31.png)|![outputs1](https://user-images.githubusercontent.com/56310078/83158417-b7fc5380-a13f-11ea-8484-223b3f57a59e.png)|
 |![inputs2](https://user-images.githubusercontent.com/56310078/83158406-b599f980-a13f-11ea-8f40-11f34c3398b8.png)|![labels2](https://user-images.githubusercontent.com/56310078/83158410-b6cb2680-a13f-11ea-8b7a-b7d1ab5e48d8.png)|![outputs2](https://user-images.githubusercontent.com/56310078/83158419-b7fc5380-a13f-11ea-8f89-a3dae83a38ad.png)|
 
-[Go 4.Study net](#4-study-nets)
+[Go 4.Study net](#4-study-nets)  
   
+<br/>  <br/>  
+
+
 ## CycleGAN
 
 [[CycleGAN paper]](https://arxiv.org/pdf/1703.10593.pdf)
@@ -468,15 +481,17 @@ model is not implemented from my code, but I reviewed paper for my study.
 [[Blog - Idea(Korean)]](https://blog.naver.com/kimnanhee97/221988558717)   
 
 
-[Go 4.Study net](#4-study-nets)  
+[Go 4.Study net](#4-study-nets)   
 
+<br/>  <br/>  
 
 
 ## FPN
 [[FPN paper]](https://arxiv.org/pdf/1612.03144.pdf)  
 
-[Go 4.Study net](#4-study-nets)  
+[Go 4.Study net](#4-study-nets)   
 
+<br/>  <br/>  
 
 
 ## Mask R-CNN
@@ -484,13 +499,12 @@ model is not implemented from my code, but I reviewed paper for my study.
 [[model-code of Detectron]](https://github.com/facebookresearch/Detectron)
 [[Detectron2]](https://github.com/facebookresearch/detectron2)   
 
-
 model is not implemented yet from my code, but I studyed roughly.  
 [[Blog - Mask R-CNN Summary(Korean)]](https://blog.naver.com/kimnanhee97/222026032725)    
 
 [Go 4.Study net](#4-study-nets)  
 
-
+<br/>  <br/>  
 
 
 ## 5. Author
