@@ -19,7 +19,7 @@
 | **Object detection**||||
 |[(FPN)](#FPN)|YOLO(V3)|Faster R-CNN||
 | **Segmentation**||||
-|[(FCN)](#FCN)|[U-Net](#U-Net)|(DeepLab V3, V3+)|[Mask R-CNN](mask-r-cnn)|
+|[(FCN)](#FCN)|[U-Net](#U-Net)|(DeepLab V3, V3+)|[Mask R-CNN](#mask-r-cnn)|
 | **Generative model** ||||
 |[GAN](#GAN)|(DCGAN)|[CycleGAN](#CycleGAN)|StarGAN(V1,V2)|
 
@@ -87,7 +87,7 @@ you can see contents about installing pytorch here!
 
 |paper-review or study|||||
 |---|---|---|---|---|
-|[ResNet](#ResNet)|[CycleGAN](#CycleGAN)|[FCN](#FCN)|[Mask R-CNN](mask-r-cnn)||
+|[ResNet](#ResNet)|[CycleGAN](#CycleGAN)|[FCN](#FCN)|[Mask R-CNN](#mask-r-cnn)||
 
 [Go Outline](#outline)  
 
