@@ -3,7 +3,7 @@
 ## Outline
 ||||||
 |---|---|---|---|---|
-|[1. Goal](#1-goal)|[2. Using Google colab](#2-using-google-colab)|[3. Install Pytorch - With PyCharm](#3-install-pytorch---with-pycharm)|[4. Study Models](#4-study-nets)|[5. Author](#5-Author)|
+|[1. Goal](#1-goal)|[2. Using Google colab](#2-using-google-colab)|[3. Install Pytorch - With PyCharm](#3-install-pytorch---with-pycharm)|[4. Study Models](#4-study-models)|[5. Author](#5-Author)|
 
 <br/>  <br/>  
 
@@ -79,7 +79,7 @@ you can see contents about installing pytorch here!
 <br/>  <br/>  
 
 
-## 4. Study nets
+## 4. Study Models
 
 |model-Implementation|||||
 |---|---|---|---|---|
