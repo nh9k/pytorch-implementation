@@ -143,7 +143,7 @@ Accuracy of horse : 62 %
 Accuracy of  ship : 58 %
 Accuracy of truck : 67 %
 ```
-[Go 4.Study Models]((#4-study-models))  
+[Go 4.Study Models](#4-study-models)  
 
 <br/>  <br/>  
 
