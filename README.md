@@ -7,32 +7,37 @@
 
 
 
-## 1. Goal
+## 1. Goal  
 
-| | | ||
+() model: I plan to study, but there is no plan to implement
+
+| | | | |
 | :------------ | :-----------: | :-----------: |:-----------: |
 |  **Classfication & Backbone**||||
-|[LeNet5](#LeNet5)|[VGGNet](#VGGNet)|(ResNet)|EfficientNet|
+|[LeNet5](#LeNet5)|[VGGNet](#VGGNet)|[(ResNet)](#ResNet)|EfficientNet|
 | **Object detection**||||
-|YOLO(V3)|Faster R-CNN|||
+|[(FPN)](#FPN)|YOLO(V3)|Faster R-CNN||
 | **Segmentation**||||
-|[U-Net](#U-Net)|(DeepLabV3)|Mask R-CNN||
+|[(FCN)](#FCN)|[U-Net](#U-Net)|(DeepLab V3, V3+)|[Mask R-CNN](#)|
 | **Generative model** ||||
-|[GAN](#GAN)|(DCGAN)|[CycleGAN](#CycleGAN)|StarGAN(V1/V2)|
+|[GAN](#GAN)|(DCGAN)|[CycleGAN](#CycleGAN)|StarGAN(V1,V2)|
 
 - [x] LeNet(2020.04)
 - [x] VGG Net(2020.04)
-- [ ] (ResNet)
+- [x] (ResNet)(2020.06)
 - [x] GAN(2020.05)
 - [ ] (DCGAN)
+- [x] (FCN)(2020.07)
 - [x] U-Net(2020.05)
-- [ ] CycleGAN
+- [ ] CycleGAN(2020.05)
+- [ ] (DeepLabV3)
 - [ ] StarGAN(V1/V2)
 - [ ] Faster R-CNN
+- [ ] (FPN)
 - [ ] EfficientNet
-- [ ] (DeepLabV3)
+- [ ] Mask R-CNN with COCO Dataset(2020.07)
 - [ ] YOLO(V3)
-- [ ] Mask R-CNN with COCO Dataset
+
 
 [Go Outline](#outline)
 
@@ -75,6 +80,10 @@ you can see contents about installing pytorch here!
 |model|||||
 |---|---|---|---|---|
 |[LeNet5](#LeNet5) |[VGGNet](#VGGNet)|[GAN](#GAN)|[U-Net](#U-Net)|[CycleGAN](#CycleGAN)|
+
+|paper-review or study|||||
+|---|---|---|---|---|
+|[ResNet](#ResNet)|[FCN](#FCN)|[Mask R-CNN](#)||
 
 [Go Outline](#outline)  
 
@@ -141,6 +150,8 @@ Accuracy of truck : 67 %
 [[torchvision: a model pre-trained on ImageNet]](https://github.com/pytorch/vision/blob/master/torchvision/models/vgg.py)
 [[model-code]](https://github.com/nh9k/pytorch-implementation/blob/master/2_vggnet/vggnet.py) 
 [[training-code]](https://github.com/nh9k/pytorch-implementation/blob/master/2_vggnet/train.py)
+  
+[[Blog - VGGNet, Shell script]](https://blog.naver.com/kimnanhee97/221884194285)
 
 Dataset: cifar10  
 `32x32` -> `16x16` -> `8x8` -> `4x4` -> `2x2` -> `1x1` with 5 maxpooling and same padding(conv2d)
@@ -266,6 +277,17 @@ Accuracy of truck : 84 %
 [Go 4.Study nets](#4-study-nets)
 
 
+
+## ResNet
+[[ResNet paper]](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[[model-code of torchvision]](https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py)  
+
+model is not implemented from my code, but I reviewed paper for my study.  
+[[Blog - ResNet Summary(Korean)]](https://blog.naver.com/kimnanhee97/222007393892)    
+
+[Go 4.Study net](#4-study-nets)  
+
+  
   
 ## GAN
 
@@ -346,6 +368,20 @@ Best model: using `LeakyReLU`
   
 [Go 4.Study net](#4-study-nets)
 
+
+
+## FCN
+[[FCN paper]](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Long_Fully_Convolutional_Networks_2015_CVPR_paper.pdf)
+[[model-code of torchvision]](https://github.com/pytorch/vision/blob/master/torchvision/models/segmentation/fcn.py)
+[[other model code]](https://github.com/wkentaro/pytorch-fcn)  
+
+model is not implemented from my code, but I reviewed paper for my study.  
+[[Blog - FCN Summary(Korean)]](https://blog.naver.com/kimnanhee97/222027492751)      
+
+[Go 4.Study net](#4-study-nets)  
+
+
+
 ## U-Net
 
 ![Unet](https://user-images.githubusercontent.com/56310078/81949340-b9a52200-963d-11ea-8b32-d247d4b5c042.JPG)
@@ -353,6 +389,9 @@ Best model: using `LeakyReLU`
 [[U-Net Paper]](https://arxiv.org/pdf/1505.04597.pdf) 
 [[The full implementation (based on Caffe) and the trained networks]](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
 [[model-code]](https://github.com/nh9k/pytorch-implementation/blob/master/4_U-Net/UNet.py)
+  
+[[Blog - UNet, Binary Cross Entropy(Korean)]](https://blog.naver.com/kimnanhee97/221982086442)
+[[Blog - UNet, Metrics]](https://blog.naver.com/kimnanhee97/221978626236)  
   
 Dataset: [isbi_challenge](http://brainiac2.mit.edu/isbi_challenge/home)  
 you can download segmentation dataset after join in the page.  
@@ -424,7 +463,35 @@ tensorboard --logdir=runs/no_batch_normalization or add_batch_normalization
 
 [[CycleGAN paper]](https://arxiv.org/pdf/1703.10593.pdf)
 
-[Go 4.Study net](#4-study-nets)
+model is not implemented from my code, but I reviewed paper for my study.  
+[[Blog - Replay Buffer(Korean)]](https://blog.naver.com/kimnanhee97/221967906769)
+[[Blog - Idea(Korean)]](https://blog.naver.com/kimnanhee97/221988558717)   
+
+
+[Go 4.Study net](#4-study-nets)  
+
+
+
+## FPN
+[[FPN paper]](https://arxiv.org/pdf/1612.03144.pdf)  
+
+[Go 4.Study net](#4-study-nets)  
+
+
+
+## Mask R-CNN
+[[Mask R-CNN paper]](https://arxiv.org/pdf/1703.06870.pdf)
+[[model-code of Detectron]](https://github.com/facebookresearch/Detectron)
+[[Detectron2]](https://github.com/facebookresearch/detectron2)   
+
+
+model is not implemented yet from my code, but I studyed roughly.  
+[[Blog - Mask R-CNN Summary(Korean)]](https://blog.naver.com/kimnanhee97/222026032725)    
+
+[Go 4.Study net](#4-study-nets)  
+
+
+
 
 ## 5. Author
-Nanhee Kim / [@nh9k ](https://github.com/nh9k)
+Nanhee Kim / [@nh9k](https://github.com/nh9k) / [Personal blog](https://blog.naver.com/kimnanhee97)  
