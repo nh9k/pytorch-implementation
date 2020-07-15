@@ -10,14 +10,14 @@
 
 ## 1. Goal  
 
-() model: I plan to study, but there is no plan to implement
+() model: I plan to study, but there is no plan to implement yet
 
 | | | | |
 | :------------ | :-----------: | :-----------: |:-----------: |
 |  **Classfication & Backbone**||||
 |[LeNet5](#LeNet5)|[VGGNet](#VGGNet)|[(ResNet)](#ResNet)|EfficientNet|
 | **Object detection**||||
-|[(FPN)](#FPN)|YOLO(V3)|Faster R-CNN||
+|Faster R-CNN|[(FPN)](#FPN)|YOLO(V3)||
 | **Segmentation**||||
 |[(FCN)](#FCN)|[U-Net](#U-Net)|(DeepLab V3, V3+)|[Mask R-CNN](#mask-r-cnn)|
 | **Generative model** ||||
@@ -34,7 +34,7 @@
 - [ ] (DeepLabV3)
 - [ ] StarGAN(V1/V2)
 - [ ] Faster R-CNN
-- [ ] (FPN)
+- [ ] (FPN)(2020.04)
 - [ ] EfficientNet
 - [ ] Mask R-CNN with COCO Dataset(2020.07)
 - [ ] YOLO(V3)
@@ -401,7 +401,7 @@ model is not implemented from my code, but I reviewed paper for my study.
 [[model-code]](https://github.com/nh9k/pytorch-implementation/blob/master/4_U-Net/UNet.py)
   
 [[Blog - UNet, Binary Cross Entropy(Korean)]](https://blog.naver.com/kimnanhee97/221982086442)
-[[Blog - UNet, Metrics]](https://blog.naver.com/kimnanhee97/221978626236)  
+[[Blog - UNet, Metrics(Korean)]](https://blog.naver.com/kimnanhee97/221978626236)  
   
 Dataset: [isbi_challenge](http://brainiac2.mit.edu/isbi_challenge/home)  
 you can download segmentation dataset after join in the page.  
@@ -488,6 +488,10 @@ model is not implemented from my code, but I reviewed paper for my study.
 
 ## FPN
 [[FPN paper]](https://arxiv.org/pdf/1612.03144.pdf)  
+
+model is not implemented yet from my code, but I studyed roughly.  
+[[Blog - FCN research(Korean)]](https://blog.naver.com/kimnanhee97/221933182912)    
+
 
 [Go 4.Study Models](#4-study-models)   
 
