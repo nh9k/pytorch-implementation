@@ -387,7 +387,7 @@ Best model: using `LeakyReLU`
 [[model-code of torchvision]](https://github.com/pytorch/vision/blob/master/torchvision/models/segmentation/fcn.py)
 [[other model code]](https://github.com/wkentaro/pytorch-fcn)  
 
-model is not implemented from my code, but I reviewed paper for my study.  
+model is not implemented from my code, but I studyed roughly.  
 [[Blog - FCN Summary(Korean)]](https://blog.naver.com/kimnanhee97/222027492751)      
 
 [Go 4.Study Models](#4-study-models)  
