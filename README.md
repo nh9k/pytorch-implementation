@@ -22,7 +22,10 @@
 |[(FCN)](#FCN)|[U-Net](#U-Net)|(DeepLab V3, V3+)|[Mask R-CNN](#mask-r-cnn)|
 | **Generative model** ||||
 |[GAN](#GAN)|(DCGAN)|[CycleGAN](#CycleGAN)|StarGAN(V1,V2)|
-
+  
+  
+  
+Finished  
 - [x] LeNet(2020.04)
 - [x] VGG Net(2020.04)
 - [x] (ResNet)(2020.06)
@@ -87,7 +90,7 @@ you can see contents about installing pytorch here!
 
 |paper-review or study|||||
 |---|---|---|---|---|
-|[ResNet](#ResNet)|[CycleGAN](#CycleGAN)|[FCN](#FCN)|[Mask R-CNN](#mask-r-cnn)|
+|[ResNet](#ResNet)|[CycleGAN](#CycleGAN)|[FCN](#FCN)|[FPN](#FPN)|[Mask R-CNN](#mask-r-cnn)|
 
 [Go Outline](#outline)  
 
