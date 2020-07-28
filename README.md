@@ -493,7 +493,7 @@ model is not implemented from my code, but I reviewed paper for my study.
 [[FPN paper]](https://arxiv.org/pdf/1612.03144.pdf)  
 
 model is not implemented yet from my code, but I studyed roughly.  
-[[Blog - FCN research(Korean)]](https://blog.naver.com/kimnanhee97/221933182912)    
+[[Blog - FPN research(Korean)]](https://blog.naver.com/kimnanhee97/221933182912)    
 
 
 [Go 4.Study Models](#4-study-models)   
