@@ -17,9 +17,9 @@
 |  **Classfication & Backbone**||||
 |[LeNet5](#LeNet5)|[VGGNet](#VGGNet)|[(ResNet)](#ResNet)|EfficientNet|
 | **Object detection**||||
-|[Faster R-CNN](#)|[(FPN)](#FPN)|YOLO(V4)||
+|[Faster R-CNN](#faster-r-cnn--mask-r-cnn)|[(FPN)](#FPN)|YOLO(V4)||
 | **Segmentation**||||
-|[(FCN)](#FCN)|[U-Net](#U-Net)|(DeepLab V3, V3+)|[Mask R-CNN](#mask-r-cnn)|
+|[(FCN)](#FCN)|[U-Net](#U-Net)|(DeepLab V3, V3+)|[Mask R-CNN](#faster-r-cnn--mask-r-cnn)|
 | **Generative model** ||||
 |[GAN](#GAN)|(DCGAN)|[CycleGAN](#CycleGAN)|StarGAN(V1,V2)|
   
@@ -86,7 +86,7 @@ you can see contents about installing pytorch here!
 
 |model-Implementation or using||||||
 |---|---|---|---|---|---|
-|[LeNet5](#LeNet5) |[VGGNet](#VGGNet)|[GAN](#GAN)|[U-Net](#U-Net)|[Faster R-CNN & Mask R-CNN](#faster-r-cnn&mask-r-cnn)|
+|[LeNet5](#LeNet5) |[VGGNet](#VGGNet)|[GAN](#GAN)|[U-Net](#U-Net)|[Faster R-CNN & Mask R-CNN](#faster-r-cnn--mask-r-cnn)|
 
 |paper-review or study|||||
 |---|---|---|---|---|
@@ -524,9 +524,7 @@ cfg.merge_from_file(model_zoo.get_config_file("COCO-Detection/faster_rcnn_R_50_F
 ```
 
 if you don't know how to label the dataset,
-consider the labeling tool `labelme`
-
-[[labelme github]](https://github.com/wkentaro/labelme)  
+consider the labeling tool `labelme` [[labelme github]](https://github.com/wkentaro/labelme)  
 
   
 [Go 4.Study Models](#4-study-models)   
