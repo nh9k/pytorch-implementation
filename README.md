@@ -57,14 +57,11 @@ drive.mount('/content/drive/')
 
 !pwd
 !ls
+!git clone https://github.com/nh9k/pytorch-implementation.git
 
-cd Pytorch_Study
+cd pytorch-implementation/0_basic
 
-!git clone https://github.com/nh9k/tutorials.git
-
-cd tutorials/beginner_source/blitz
-
-!python3 cifar10_tutorial.py
+!python cifar10_tutorial.py
 ```
 
 [Go Outline](#outline)  
