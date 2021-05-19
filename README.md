@@ -17,7 +17,7 @@
 |  **Classfication & Backbone**||||
 |[LeNet5](#LeNet5)|[VGGNet](#VGGNet)|[(ResNet)](#ResNet)|EfficientNet|
 | **Object detection**||||
-|Faster R-CNN|[(FPN)](#FPN)|YOLO(V3)||
+|[Faster R-CNN](#)|[(FPN)](#FPN)|YOLO(V4)||
 | **Segmentation**||||
 |[(FCN)](#FCN)|[U-Net](#U-Net)|(DeepLab V3, V3+)|[Mask R-CNN](#mask-r-cnn)|
 | **Generative model** ||||
@@ -33,13 +33,13 @@ Finished
 - [ ] (DCGAN)
 - [x] (FCN)(2020.07)
 - [x] U-Net(2020.05)
-- [ ] CycleGAN(2020.05)
+- [x] CycleGAN(2020.05)
 - [ ] (DeepLabV3)
 - [ ] StarGAN(V1/V2)
-- [ ] Faster R-CNN
-- [ ] (FPN)(2020.04)
+- [x] Faster R-CNN(2021.05)
+- [x] (FPN)(2020.04)
 - [ ] EfficientNet
-- [ ] Mask R-CNN with COCO Dataset(2020.07)
+- [x] Mask R-CNN(2020.07)
 - [ ] YOLO(V3)
 
 
@@ -84,13 +84,13 @@ you can see contents about installing pytorch here!
 
 ## 4. Study Models
 
-|model-Implementation|||||
-|---|---|---|---|---|
-|[LeNet5](#LeNet5) |[VGGNet](#VGGNet)|[GAN](#GAN)|[U-Net](#U-Net)|
+|model-Implementation or using||||||
+|---|---|---|---|---|---|
+|[LeNet5](#LeNet5) |[VGGNet](#VGGNet)|[GAN](#GAN)|[U-Net](#U-Net)|[Faster R-CNN & Mask R-CNN](#faster-r-cnn&mask-r-cnn)|
 
 |paper-review or study|||||
 |---|---|---|---|---|
-|[ResNet](#ResNet)|[CycleGAN](#CycleGAN)|[FCN](#FCN)|[FPN](#FPN)|[Mask R-CNN](#mask-r-cnn)|
+|[ResNet](#ResNet)|[CycleGAN](#CycleGAN)|[FCN](#FCN)|[FPN](#FPN)||
 
 [Go Outline](#outline)  
 
@@ -501,18 +501,38 @@ model is not implemented yet from my code, but I studyed roughly.
 <br/>  <br/>  
 
 
-## Mask R-CNN
+## Faster R-CNN & Mask R-CNN
+[[Faster R-CNN paper]](https://arxiv.org/pdf/1506.01497.pdf)
 [[Mask R-CNN paper]](https://arxiv.org/pdf/1703.06870.pdf)
 [[model-code of Detectron]](https://github.com/facebookresearch/Detectron)
-[[Detectron2]](https://github.com/facebookresearch/detectron2)   
+[[Detectron2 github]](https://github.com/facebookresearch/detectron2)   
 
-model is not implemented yet from my code, but I studyed roughly.  
-[[Blog - Mask R-CNN Summary(Korean)]](https://blog.naver.com/kimnanhee97/222026032725)    
+model is not implemented yet from my code, but I studied detectron2.  
+[[Blog - Detection and Segmentation Summary(Korean)]](https://blog.naver.com/kimnanhee97/222026032725)  
+[[Webtoon Segmentation using Detectron2(model: Mask R-CNN)]](https://github.com/overfitting-ai-community/basic-course)  
 
+If you want to train model: Faster R-CNN, Just change the model
+
+from
+```
+cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
+```
+
+to
+```
+cfg.merge_from_file(model_zoo.get_config_file("COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml"))
+```
+
+if you don't know how to label the dataset,
+consider the labeling tool `labelme`
+
+[[labelme github]](https://github.com/wkentaro/labelme)  
+
+  
 [Go 4.Study Models](#4-study-models)   
 
 <br/>  <br/>  
 
 
 ## 5. Author
-Nanhee Kim / [@nh9k](https://github.com/nh9k) / [Personal blog](https://blog.naver.com/kimnanhee97)  
+Nanhee Kim [@nh9k](https://github.com/nh9k) / [Personal blog](https://blog.naver.com/kimnanhee97)  
